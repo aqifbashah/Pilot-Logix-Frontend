@@ -8,7 +8,7 @@ import AssignmentsTab from "./tabs/AssignmentsTab";
 import OrdersTab from "./tabs/OrdersTab";
 import DriversTab from "./tabs/DriversTab";
 import TrucksTab from "./tabs/TrucksTab";
-import jwtDecode from "jwt-decode";
+import Decode from "jwt-decode";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -54,7 +54,7 @@ function AdminDashboard() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      const decodedToken = jwtDecode(token);
+      const decodedToken = Decode(token);
       setDecoded(decodedToken);
     }
   }, []);
