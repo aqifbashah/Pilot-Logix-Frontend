@@ -1,6 +1,5 @@
 import { SectionHeader } from "../../components/Sections";
 import { useEffect, useState } from "react";
-import { jwtDecode } from "jwt-decode";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -9,7 +8,7 @@ import AssignmentsTab from "./tabs/AssignmentsTab";
 import OrdersTab from "./tabs/OrdersTab";
 import DriversTab from "./tabs/DriversTab";
 import TrucksTab from "./tabs/TrucksTab";
-import AdminsTab from "./tabs/AdminsTab";
+import jwtDecode from "jwt-decode";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;

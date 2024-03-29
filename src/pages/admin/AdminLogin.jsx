@@ -47,8 +47,8 @@ function AdminLogin() {
         });
         setTimeout(() => {
           navToAdminDashboard(navigate)();
-        }, 1500);
-      }, 1000);
+        }, 1000);
+      }, 2000);
     } catch (error) {
       console.error("Login Error:", error);
       setShowAlert({
