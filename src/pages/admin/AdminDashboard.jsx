@@ -8,7 +8,7 @@ import AssignmentsTab from "./tabs/AssignmentsTab";
 import OrdersTab from "./tabs/OrdersTab";
 import DriversTab from "./tabs/DriversTab";
 import TrucksTab from "./tabs/TrucksTab";
-import Decode from "jwt-decode";
+import { Decode } from "jwt-decode";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
